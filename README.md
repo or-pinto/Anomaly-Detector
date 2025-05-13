@@ -9,3 +9,10 @@ This tool processes robot operational data, extracts meaningful features, trains
 - **Performance Evaluation**: Comprehensive metrics and visualizations
 - **Model Persistence**: Save and load trained models
 - **Visualization Tools**: Generates confusion matrices, learning curves, and feature comparisons
+### Installation
+
+**Install all dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+And from then code execution is immediate.
