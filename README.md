@@ -24,6 +24,10 @@ This project implements an anomaly detection system for robotic systems by analy
 ```bash
 poetry install
 ```
+or alternatively using requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ## 📊 Data
 
