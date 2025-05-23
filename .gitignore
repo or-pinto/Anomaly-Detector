@@ -1,0 +1,5 @@
+# Ignore specific data files in the root directory
+/data.parquet
+/data.pkl
+/robot_anomaly_detection_model.pkl
+/confusion_matrix.png

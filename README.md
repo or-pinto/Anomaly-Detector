@@ -1,18 +1,47 @@
-# Robot Anomaly Detection
-A machine learning system to detect and classify anomalies in robot operation data. This project uses neural networks to identify patterns associated with abnormal robot behavior.
-## Overview
-This tool processes robot operational data, extracts meaningful features, trains a neural network model, and provides visualizations to understand anomaly patterns. It's designed for robot maintenance teams, automation engineers, and quality control systems.
-## Features
-- **Data Preprocessing**: Handles raw robot operation data, including cleaning and feature engineering
-- **Feature Extraction**: Creates meaningful features from time-series data, including differential features
-- **Model Training**: Trains a customizable neural network classifier
-- **Performance Evaluation**: Comprehensive metrics and visualizations
-- **Model Persistence**: Save and load trained models
-- **Visualization Tools**: Generates confusion matrices, learning curves, and feature comparisons
-### Installation
+# 🤖 Robot Anomaly Detection
 
-**Install all dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-And from then code execution is immediate.
+A machine learning project for detecting anomalies in robot sensor data using differential feature engineering and neural networks.
+
+## 📝 Overview
+
+This project implements an anomaly detection system for robotic systems by analyzing various sensor measurements including:
+- Motor velocities, positions, and torques
+- Joint measurements
+- System current and voltage readings
+- Target values
+
+## 🎯 Key Features
+
+- Differential feature engineering from robot sensor data
+- Multi-class anomaly detection
+- Support for 6-motor robot configurations
+- Detection of various anomaly types (friction, weight, miscommutation)
+
+## 🛠️ Installation
+
+1. Clone the repository
+2. Install dependencies from pyproject.toml using Poetry:
+```bash
+poetry install
+```
+
+## 📊 Data
+
+The project expects sensor data in `.parquet` format with the following measurements:
+- Motor measurements (velocity, position, torque, current)
+- Joint positions and velocities
+- System measurements
+- Categorical labels for anomaly types
+
+## 🚀 Usage
+
+1. Place your sensor data file as `data.parquet` in the project directory
+2. Run the Jupyter notebook to:
+   - Load and process sensor data
+   - Generate differential features
+   - Train the anomaly detection model
+   - Evaluate results
+
+## 📄 License
+
+MIT License.
